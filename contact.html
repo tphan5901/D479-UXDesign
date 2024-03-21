@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow-y: hidden;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            padding: 2vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(75, 75, 75);
+        }
+        .header h1{
+            color: white;
+        }
+        .nav {
+            margin-left: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            outline: none; 
+        }
+
+        .nav a:hover {
+            text-decoration: none;
+            color: white;
+            background: black;
+            border-radius: 5px;
+            outline: 2px solid black;
+        }
+
+        form {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+       
+        }
+        
+        form input {
+            align-items: center;
+            width: 50%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        form label {
+            margin-bottom: 10px;
+        }
+
+
+        .footer {
+            padding: 20px;
+            color: white;
+            margin-top: 20vh; 
+            background: rgb(9, 65, 150);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #submit{
+            padding: 10px;
+            width: 50%;
+            border-radius: 5px;
+            background: rgb(13, 84, 165);
+            color: white;
+        }
+        #submit:hover{
+            border-radius: 5px;
+            background: rgb(0, 0, 0);
+            color: white;
+        }
+        .search-box input{
+    padding: 6px 0px 6px 6px;
+    border-radius: 5px;
+
+}
+.search-box{
+    margin-left: auto;
+}
+.search-box button{
+    color: white;
+    background-color: #003B6D;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Contact form</h1>
+        <nav class="nav">
+            <a href="index.html" style="text-decoration:none">Home</a>
+            <a href="index.html" style="text-decoration:none">Fish owner</a>
+            <a href="index.html" style="text-decoration:none">Dog owner</a>
+            <a href="index.html" style="text-decoration:none">Cat owner</a>
+
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+          
+
+        <form method="post" class="form-control">
+            <label for="">Name</label>
+            <input type="text" placeholder="" id="name">
+
+            <label for="">Phone</label>
+            <input type="text" placeholder="" id="phone">
+            
+            <label for="">Email address</label>
+            <input type="text" placeholder="" id="email">
+            
+            <label for="">Timezone</label>
+            <input type="time" placeholder="" id="timezone">
+            
+            <label for="">Pet name</label>
+            <input type="text" placeholder="" id="petname">
+            
+            <label for="confirmEmail">Pet type</label>
+            <input type="text"  placeholder="" id="pettype">
+
+            <label for="">Pet age</label>
+            <input type="text" placeholder="" id="petage">
+            
+            <button id = "submit"> Submit</button>
+        </form>
+
+ 
+ <script>
+    let submit = document.getElementById('submit');
+
+    submit.addEventListener('click', () => {
+        let name = document.getElementById('name').value;
+        let phone = document.getElementById('phone').value;
+        let email = document.getElementById('email').value;
+        let timezone = document.getElementById('timezone').value;
+        let petname = document.getElementById('petname').value;
+        let pettype = document.getElementById('pettype').value;
+        let petage = document.getElementById('petage').value;
+
+        if (name === '' || phone === '' || email === '' || timezone === '' || petname === '' || pettype === '' || petage === '') {
+            alert('One or more form fields are empty');
+            return;
+        }else{
+            return;
+        }
+    });
+
+        </script>
+    <footer class="footer">
+        <p>Paradigm pet professional@2024</p>
+    </footer>
+</body>
+</html>
