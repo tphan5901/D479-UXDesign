@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+   
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px;
+            outline: none; 
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+            border-radius: 5px;
+            outline: 2px solid black;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1%;
+            text-align: center;
+  
+            margin-top: 50%;
+            width: 100%;
+        }
+        footer div {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .image-container {
+         
+           float: right;
+        }
+
+    
+.search-box input{
+    padding: 6px 0px 6px 6px;
+    border-radius: 5px;
+}
+.search-box button:hover{
+    background-color: orange;
+    color:white;
+}
+.search-box button{
+    color: white;
+    background-color: #11d85e;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1 >Welcome to Taniti</h1>
+    </div>
+    <div>
+        
+    </div>
+    <nav>
+        
+        <a href="transport.html">Transport</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="restaurant.html">Restaurants</a>
+    </nav>
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+</header>
+
+<main>
+
+    
+    <div class="main-container">
+       <div style="margin-top: 0; margin-left: 2%; float:left;">
+
+        <h1 > Beach information</h1>
+        <h3>
+            Most people visit Taniti to enjoy the beaches. 
+        </h3>
+       </div>
+    
+
+        <div class="image-container">
+            <img src="./images/Tahiti-beach.jpg" style="width: 90%; float: right; margin-top: 8%; margin-left: 5%;" alt="">
+           
+        </div>
+</main>
+
+<footer style="background-color: #000000;">
+    <div style="color: white;">
+        Taniti@2024 
+    </div>
+  
+</footer>
+
+
+
+</body>
+</html>
