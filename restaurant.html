@@ -42,17 +42,13 @@
         footer {
             background-color: #333;
             color: #fff;
-            padding: 1%;
-            margin-top: 50%;
-            text-align: center;
-   
+            display: flex;
+            margin-top: 40vh; 
+            background: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
             width: 100%;
         }
-        footer div {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
 
         .image-container {
             width: 20%;
@@ -85,10 +81,13 @@
     background-color: orange;
     color:white;
 }
+
 main img{
     width: 32%;
 }
 main button{
+    position: relative;
+    display: flex;
     position: absolute;
     z-index: 999;
     top: 50%;
@@ -123,6 +122,10 @@ main .b2{
     left: 1%;
 }
 
+.image-container {
+         float: left;
+      }
+
     </style>
 </head>
 <body>
@@ -139,7 +142,7 @@ main .b2{
         <a href="transport.html">Transportation</a>
 
         <a href="lodging.html">Lodging </a>
-              <a href="faq.html"  style="text-decoration:none">FAQ</a>
+        <a href="faq.html">FAQ</a>
     </nav>
     <div class="search-box">
         <input type="text" placeholder="Search...">
@@ -172,15 +175,29 @@ main .b2{
    
     
 </div>
-    
-
 </main>
 
-<footer style="background-color: #000000;">
-    <div style="color: white;">
-        Taniti@2024 
+
+   
+<div class="container" style="margin-top: 45%;">
+    <div class="image-container">
+        <img src="./images/Screenshot 2024-03-21 133137.png" style="width: 200%; height: 40%; margin-left: 6%;" alt="">
+       
     </div>
 
+    <h3 style="padding: 0 0 0 45%;">
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias at beatae dolores est similique omnis delectus maxime facilis odio, maiores ea ab impedit praesentium nostrum a labore ipsum nobis?
+       Obcaecati impedit delectus, architecto voluptates explicabo, ipsam iste soluta repellendus dolorum culpa dolorem optio ut repellat reprehenderit alias vitae incidunt, id nam hic quidem. Porro beatae voluptates quo in! Facere.
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi in aliquam ullam eos. Fugit, aspernatur quam. Ipsam rerum consectetur laborum? Maxime itaque a qui blanditiis corporis, in delectus cum culpa!
+       Quisquam voluptatem facere voluptas reiciendis tenetur molestiae odio, officia aspernatur, delectus ut omnis! Nulla quaerat error ratione qui in non aliquid quia commodi neque beatae! Sit quaerat quidem ex nulla? 
+    </h3>
+</div>
+
+
+<footer style="background-color: #000000;">
+    <h4 style= "margin-left: 50%; color: white;">
+        Taniti@2024 
+    </h4>
 </footer>
 
 
